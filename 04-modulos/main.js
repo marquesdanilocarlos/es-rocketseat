@@ -1,7 +1,7 @@
-import {multiply, sum} from "./calc.js";
+import * as calc from "./calc.js";
 
-const sumValue = sum(10,6);
-const multiplyValue = multiply(5,8);
+const sumValue = calc.sum(10,6);
+const multiplyValue = calc.multiply(5,8);
 
 console.log(sumValue)
 console.log(multiplyValue)
