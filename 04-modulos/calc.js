@@ -4,6 +4,8 @@ export default function sum(a, b) {
 }
 
 //Export nomeado
-export function multiply(a, b) {
+function multiply(a, b) {
     return a * b
 }
+
+export {multiply as multiplyTwoNumbers}
