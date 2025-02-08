@@ -1,6 +1,5 @@
-import Calc from "./calc.js";
+import calc from "./calc.js";
 
-const calc = new Calc();
 const sumValue = calc.sum(10,6);
 const multiplyValue = calc.multiply(5,8);
 
