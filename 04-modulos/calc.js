@@ -1,11 +1,8 @@
-//Export padrão
-function sum(a, b) {
-    return a + b
+export default class Calc{
+    sum(a, b) {
+        return a + b
+    }
+    multiply(a, b) {
+        return a * b
+    }
 }
-
-//Export nomeado
-function multiply(a, b) {
-    return a * b
-}
-
-export {sum, multiply}
