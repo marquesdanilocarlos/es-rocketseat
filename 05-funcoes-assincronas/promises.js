@@ -15,12 +15,15 @@ function asyncFunction() {
     })
 }
 
-let promise = asyncFunction()
+async function fetch() {
+    try {
+        const response = await asyncFunction()
+        console.log(response)
+    } catch (error) {
+        alert(`Erro: ${error}`)
+    } finally {
+        console.log('Execução da Promise finalizada!')
+    }
+}
 
-promise.then((result) => {
-    console.log(result)
-}).catch((err) => {
-    console.log(err)
-}).finally(() => {
-    console.log('Execução da promise concluída!')
-})
+fetch()
