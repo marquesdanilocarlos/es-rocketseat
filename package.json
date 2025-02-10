@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "server": "json-server ./07-fetch/server.json"
+  },
   "dependencies": {
+    "json-server": "^1.0.0-beta.3",
     "moment": "^2.30.1"
   }
 }
