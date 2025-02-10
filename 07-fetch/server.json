@@ -1,8 +1,19 @@
 {
-  "users": [
+  "products": [
     {
-      "name": "Danilo",
-      "age": 33
+      "id": 1,
+      "name": "Mouse",
+      "price": 153.14
+    },
+    {
+      "id": 2,
+      "name": "Teclado",
+      "price": 268.99
+    },
+    {
+      "id": 3,
+      "name": "Monitor",
+      "price": 799.90
     }
   ]
 }
