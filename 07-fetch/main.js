@@ -6,10 +6,16 @@ const apiUrl = "http://localhost:3000"
 
 async function fetchProducts(){
     const request = await fetch(`${apiUrl}/products`)
-    const data = await request.json()
-    return data
+    return await request.json()
 }
 
-await fetchProducts().then(products => console.log(products))
+async function fetchProduct(id){
+    const request = await fetch(`${apiUrl}/products/${id}`)
+    return await request.json()
+}
+
+fetchProducts().then(products => console.log(products))
+
+fetchProduct(2).then(product => console.log(product))
 
 
