@@ -14,8 +14,35 @@ async function fetchProduct(id){
     return await request.json()
 }
 
-fetchProducts().then(products => console.log(products))
+//fetchProducts().then(products => console.log(products))
 
-fetchProduct(2).then(product => console.log(product))
+//fetchProduct(2).then(product => console.log(product))
+
+const nameInput = document.querySelector('#name')
+const priceInput = document.querySelector('#price')
+const form = document.querySelector('#form')
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const productName = nameInput.value;
+    const productPrice = priceInput.value;
+
+    await fetch(`${apiUrl}/products`, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        body: JSON.stringify({
+            id: new Date().getTime().toString(),
+            name: productName,
+            price: productPrice,
+        })
+    })
+
+    console.log(await fetchProducts())
+
+})
 
 

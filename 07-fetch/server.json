@@ -1,19 +1,24 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Mouse",
       "price": 153.14
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Teclado",
       "price": 268.99
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Monitor",
-      "price": 799.90
+      "price": 799.9
+    },
+    {
+      "id": "1739235666900",
+      "name": "Microfone",
+      "price": "700"
     }
   ]
 }
