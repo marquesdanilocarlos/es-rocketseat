@@ -18,5 +18,5 @@ var User = /*#__PURE__*/function () {
     }
   }]);
 }();
-var user = new User('marquesdanilocarlos@gmail.com');
+var user = new User('danilo.marques@gmail.com');
 user.sendMessage();
