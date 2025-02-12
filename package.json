@@ -2,7 +2,7 @@
   "scripts": {
     "server": "json-server ./07-fetch/server.json",
     "build": "babel 08-compilacao/main.js --watch --out-dir 08-compilacao/dist",
-    "bundle": "webpack ./09-bundler/src/js/index.js --output-path ./09-bundler/dist"
+    "bundle": "webpack"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
