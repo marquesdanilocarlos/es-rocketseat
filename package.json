@@ -1,7 +1,8 @@
 {
   "scripts": {
     "server": "json-server ./07-fetch/server.json",
-    "build": "babel 08-compilacao/main.js --watch --out-dir 08-compilacao/dist"
+    "build": "babel 08-compilacao/main.js --watch --out-dir 08-compilacao/dist",
+    "bundle": "webpack ./09-bundler/src/js/index.js --output-path ./09-bundler/dist"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.3",
@@ -10,6 +11,8 @@
   "devDependencies": {
     "@babel/cli": "^7.26.4",
     "@babel/core": "^7.26.8",
-    "@babel/preset-env": "^7.26.8"
+    "@babel/preset-env": "^7.26.8",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   }
 }
