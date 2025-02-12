@@ -1,4 +1,5 @@
 const path = require('path')
+const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     entry: './09-bundler/src/js/index.js',
@@ -7,4 +8,5 @@ module.exports = {
         path: path.resolve(`${__dirname}/09-bundler`, 'dist')
     },
     mode: 'development',
+    plugins: [new HTMLWebpackPlugin()]
 }
