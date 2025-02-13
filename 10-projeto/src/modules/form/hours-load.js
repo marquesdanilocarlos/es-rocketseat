@@ -5,6 +5,9 @@ import {hoursClick} from './hours-click.js'
 const hoursList = document.querySelector("#hours")
 
 export function hoursLoad(date) {
+
+    hoursList.innerHTML = '';
+
     const opening = openingHours.map(hour => {
         const [scheduleHour] = hour.split(':')
         const isHourAvailable = dayjs(date).add(scheduleHour, 'hour').isAfter(dayjs())
