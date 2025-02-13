@@ -2,13 +2,18 @@
   "name": "hair-day",
   "description": "Projeto de estudo do curso Full Stack RocketSeat",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "server": "json-server --watch server.json --port 3333"
+    "server": "json-server --watch server.json --port 3333",
+    "build": "webpack"
   },
   "author": "Danilo Marques <marquesdanilocarlos@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "json-server": "^1.0.0-beta.3"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
   }
 }
