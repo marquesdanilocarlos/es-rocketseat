@@ -1,0 +1,14 @@
+{
+  "name": "10-projeto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch server.json --port 3333"
+  },
+  "author": "Danilo Marques <marquesdanilocarlos@gmail.com>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
