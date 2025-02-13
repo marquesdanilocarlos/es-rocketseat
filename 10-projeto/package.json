@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "server": "json-server --watch server.json --port 3333",
-    "build": "webpack"
+    "build": "webpack",
+    "dev": "webpack serve"
   },
   "author": "Danilo Marques <marquesdanilocarlos@gmail.com>",
   "license": "ISC",
@@ -14,6 +15,7 @@
   },
   "devDependencies": {
     "webpack": "^5.97.1",
-    "webpack-cli": "^6.0.1"
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
   }
 }
