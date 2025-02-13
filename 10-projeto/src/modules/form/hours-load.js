@@ -1,5 +1,6 @@
 import {openingHours} from "../../contants.js"
 import dayjs from 'dayjs'
+import {hoursClick} from './hours-click.js'
 
 const hoursList = document.querySelector("#hours")
 
@@ -34,6 +35,8 @@ export function hoursLoad(date) {
 
         hoursList.append(li)
     })
+
+    hoursClick()
 }
 
 function hourHeaderAdd(title) {
