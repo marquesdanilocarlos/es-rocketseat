@@ -15,10 +15,18 @@ module.exports = {
         },
         port: 3000,
         open: true,
-        liveReload: true,
+        liveReload: true
     },
     plugins: [new HtmlWebpackPlugin({
         template: path.resolve(__dirname, './index.html'),
-        favicon: path.resolve(__dirname, './src/assets/scissors.svg'),
-    })]
+        favicon: path.resolve(__dirname, './src/assets/scissors.svg')
+    })],
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
+    }
 }
