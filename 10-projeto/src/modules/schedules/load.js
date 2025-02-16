@@ -7,9 +7,9 @@ const selectedDate = document.querySelector('#date')
 export async function schedulesDay() {
     const date = selectedDate.value
 
-    const dailySchedule = await fetchSchedulesByDay({date})
+    const dailySchedules = await fetchSchedulesByDay({date})
 
-    showSchedules(dailySchedule)
+    showSchedules(dailySchedules)
 
-    hoursLoad(date)
+    hoursLoad({date, dailySchedules})
 }
